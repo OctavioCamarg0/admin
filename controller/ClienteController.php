@@ -64,8 +64,9 @@ class ClienteController{
          }
       }
     
-    public function deletar($id_){
-
+    public function deletar($ID_CLIENTE){
+        $cliente = new Cliente();
+        $cliente->deletar($ID_CLIENTE);
     }
     
 }

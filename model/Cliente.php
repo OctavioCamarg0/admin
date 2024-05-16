@@ -49,7 +49,7 @@ class Cliente{
 
      public function cadastrar() {
         
-        $sql = "INSERT INTO cliente (NOME, EMAIL, TELEFONE, CPF, DATA_NASCIMENTO)  
+        $sql = "INSERT INTO clientes (NOME, EMAIL, TELEFONE, CPF, DATA_NASCIMENTO)  
                         VALUES(:NOME, :EMAIL, :TELEFONE, :CPF, :DATA_NASCIMENTO)";
     
         $stmt = $this->db->prepare($sql);

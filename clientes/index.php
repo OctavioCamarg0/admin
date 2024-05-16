@@ -35,8 +35,6 @@ $clientes = $ClienteController->index();
                             <th>Nome</th>
                             <th>CPF</th>
                             <th>E-mail</th>
-                            <th>Telefone</th>
-                            <th>Data de Nascimento</th>
 
                             <th>Ação</th>
                         </tr>
@@ -51,12 +49,12 @@ $clientes = $ClienteController->index();
                             <tr>
                                 <td><?= $cliente->ID_CLIENTE ?></td>
                                 <td><?= $cliente->NOME ?></td>
-                                <td><?= $cliente->TELEFONE ?></td>
+                                <td><?= $cliente->CPF ?></td>
                                 <td><?= $cliente->EMAIL ?></td>
 
                                 <td><a href="editar.php?ID_CLIENTE=<?=$cliente->ID_CLIENTE ?>" class="btn btn-primary">Editar</a></td>
                                 <td><a href="visualizar.php?ID_CLIENTE=<?= $cliente->ID_CLIENTE ?>" class="btn btn-primary">Visualizar</a></td>
-                                <td><a href="deletar.php" class="btn btn-danger">Excluir</a></td>
+                                <td><a href="deletar.php?ID_CLIENTE=<?= $cliente->ID_CLIENTE ?>" onclick="return confirm('Tem certeza que deseja deletar o cliente?')" class="btn btn-danger">Excluir</a></td>
                             </tr>
                         <?php
                         endforeach;

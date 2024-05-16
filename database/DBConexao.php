@@ -3,7 +3,7 @@
 class DBConexao{
 
     private $host = "localhost";
-    private $dbname = "loja";
+    private $dbname = "lojinha";
     private $username = "root";
     private $password = "";
 
