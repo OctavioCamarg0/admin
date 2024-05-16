@@ -62,7 +62,7 @@ class Produto{
     }
     
     //Atualizar os dados do usuário selecionado
-    public function atualizar ($ID_CLIENTE){
+    public function atualizar ($id_produto){
 
         $sql = "UPDATE produtos SET titulo=:titulo, descricao=:descricao, valor=:valor, foto=:foto 
                         WHERE id_produto=:id_produto";
